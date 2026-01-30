@@ -2,15 +2,15 @@
 #include <stdbool.h>
 
 void implication_check(bool raining) {
-    //implication check        (A -> B)
     if (raining) {
         printf("The ground is getting wet ");
     }
+
+    // (A -> B)
 }
 
 void contrapositive_check(const char role[0]) {
     bool isLogin = false;
-    //contrapositive_check       (A -> B) == (!A -> !B)
     if (role == "admin") {
         isLogin = true;
     }
@@ -18,13 +18,16 @@ void contrapositive_check(const char role[0]) {
     if (!isLogin) {
         role = "user";
     }
+
+    // (A -> B) == (!A -> !B)
 }
 
 void biconditional_check(const char role[0]) {
-    //biconditional check          (A -> B, B -> A)     (A <-> B)
     if (role == "admin") {
         printf("You successfully logged ");
     }
+
+    // (A -> B, B -> A)     (A <-> B)
 }
 
 int main() {
