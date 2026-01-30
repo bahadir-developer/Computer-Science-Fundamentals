@@ -10,9 +10,9 @@ int implication_check(bool raining) {
 }
 
 int contrapositive_check(char ) {
-    if () {
-
-    }
+    // if () {
+    //
+    // }
 
     return 0;
 }
@@ -29,7 +29,7 @@ int main() {
     implication_check(true);
     printf("");
 
-    contrapositive_check();
+    // contrapositive_check();
     printf("");
 
     biconditional_check("user");
