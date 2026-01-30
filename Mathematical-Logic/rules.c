@@ -4,7 +4,7 @@
 void implication_check(bool raining) {
     //implication check        (A -> B)
     if (raining) {
-        printf("The ground is getting wet ", "\n");
+        printf("The ground is getting wet ");
     }
 }
 
@@ -23,7 +23,7 @@ void contrapositive_check(const char role[0]) {
 void biconditional_check(const char role[0]) {
     //biconditional check          (A -> B, B -> A)     (A <-> B)
     if (role == "admin") {
-        printf("You successfully logged ", "\n");
+        printf("You successfully logged ");
     }
 }
 
