@@ -3,4 +3,5 @@ project(untitled C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(untitled "Mathematical-Logic/rules.c")
+add_executable(untitled "Mathematical-Logic/rules.c"
+        Boolean-Algebra/rules.c)
