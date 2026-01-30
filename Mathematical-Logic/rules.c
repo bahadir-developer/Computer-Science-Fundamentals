@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-void implication_check(bool raining) {
-    if (raining) {
+void implication_check(bool is_rainy) {
+    if (is_rainy) {
         printf("The ground is getting wet ");
     }
 
@@ -19,7 +19,7 @@ void contrapositive_check(const char role[0]) {
         role = "user";
     }
 
-    // (A -> B) == (!A -> !B)
+    // (A -> B) == (!B -> !A)
 }
 
 void biconditional_check(const char role[0]) {
@@ -32,9 +32,7 @@ void biconditional_check(const char role[0]) {
 
 int main() {
     implication_check(true);
-
     contrapositive_check("admin");
-
     biconditional_check("admin");
     return 0;
 };
